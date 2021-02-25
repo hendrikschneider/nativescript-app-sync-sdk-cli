@@ -94,7 +94,7 @@ export class AcquisitionManager {
             clientUniqueId: this._clientUniqueId
         };
 
-        var requestUrl: string = this._serverUrl + "updateCheck?" + queryStringify(updateRequest);
+        var requestUrl: string = this._serverUrl + "update_check?" + queryStringify(updateRequest);
 
         this._httpRequester.request(Http.Verb.GET, requestUrl, (error: Error, response: Http.Response) => {
             if (error) {
